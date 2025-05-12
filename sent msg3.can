@@ -1,0 +1,25 @@
+// capl script
+
+variables
+{
+	int EngSpd = 0;
+	message EngineState msg2;
+	msTimer tmrSendMsg2;
+}
+
+on timer tmrSendMsg2;
+{
+	msg2.EngineSpeed = EngSpd
+	EngSpd += 10;
+	output(msg2);
+}
+
+on key 'b'
+{
+	setTimerCyclic(tmrSendMsg2, 100);
+}
+
+on key 'a'
+{
+	message
+}
