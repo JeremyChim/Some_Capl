@@ -1,0 +1,13 @@
+// capl script
+
+on key 'a'
+{
+	message EnginState msg0x123;
+	
+	msg.word(0) = 0x0FA1; // A1 0F
+	
+	msg.EngineSpeed = 2000;
+	msg.OnOff = 1;
+	
+	output(msg1);  // sent msg
+}
