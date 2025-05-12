@@ -1,0 +1,23 @@
+// capl script
+
+on key 'a'
+{
+	message 0x1A5 msg1;
+	message 0x2BB msg2 = { dlc=8, byte(0) = 0xA8, byte(1)=0xFF };
+	message 0x1A5 msg3;
+	
+	msg1.dlc = 8
+	msg1.byte(0) = 0xC7
+	msg1.byte(1) = 0x95
+	msg1.byte(2) = 0xFF
+	msg1.byte(3) = 0xAA	
+	
+	msg.dlc = 8;
+	msg.word(0) = 0x3412 // [byte0, byte1] 0x12, 0x34 
+	msg.word(2) = 0x7856 // [byte2, byte3] 0x56, 0x78
+	
+	
+	output(msg1);  // sent
+	output(msg2);  // sent
+	output(msg3);  // sent
+}
