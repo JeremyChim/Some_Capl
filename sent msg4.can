@@ -1,0 +1,71 @@
+// capl script
+// anthon: jeremy.chim
+
+on preStart
+{
+	// 总线开始前
+}
+
+on start
+{
+	// 总线开始后
+}
+
+on preStop
+{
+	// 总线结束前
+}
+
+on stopMeasurement
+{
+	// 总线结束后
+}
+
+
+
+
+
+
+on key 'a'
+{
+	// 按键a键
+}
+
+on timer
+{
+	// 定时器
+}
+
+
+
+
+on message
+{
+	// 报文触发
+}
+
+on signal
+{
+	// 信号触发, dlc一定要有这个signal
+}
+
+
+on signal_update
+{
+	// 信号更新触发, dlc一定要有这个signal
+	// 值一定要有更新
+}
+
+
+on sysVar
+{
+	// 系统变量触发
+}
+
+on sysVar_update
+{
+	// 系统变量更新触发
+	// 值一定要有更新
+}
+
+
